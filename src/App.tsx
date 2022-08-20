@@ -1,5 +1,7 @@
+import './styles/main.module.scss';
+
 function App() {
-  return <div className='App'>App tsx</div>;
+  return <div>App tsx</div>;
 }
 
 export default App;

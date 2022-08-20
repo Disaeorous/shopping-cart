@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.5em;
+  background-color: var(--vintage-bg);
+  border: 1px solid var(--orange-border);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+
+  margin-inline: 1.2rem;
+}

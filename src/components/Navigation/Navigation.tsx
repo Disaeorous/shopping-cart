@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 import styles from './navigation.module.scss';
 
 export const Navigation = () => {
-  const { navList } = styles;
+  const { nav, navList } = styles;
   return (
-    <nav>
+    <nav className={nav}>
       <ul className={navList}>
         <li>
           <NavLink
@@ -26,9 +26,9 @@ export const Navigation = () => {
         <li>
           <NavLink
             style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'orange' })}
-            to='/store'
+            to='/shop'
           >
-            Store
+            Shop
           </NavLink>
         </li>
       </ul>

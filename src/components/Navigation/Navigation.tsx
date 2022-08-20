@@ -1,9 +1,12 @@
 import { NavLink } from 'react-router-dom';
 
+import styles from './navigation.module.scss';
+
 export const Navigation = () => {
+  const { navList } = styles;
   return (
     <nav>
-      <ul style={{ display: 'flex', gap: '2rem', color: 'var(--blue-text)' }}>
+      <ul className={navList}>
         <li>
           <NavLink
             style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'orange' })}

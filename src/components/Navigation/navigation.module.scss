@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-item {
+}
+
+.nav-link {
+  color: var(--blue-text);
+}

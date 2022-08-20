@@ -1,0 +1,40 @@
+@use '../../utils/' as *;
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap');
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 0.625em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  text-rendering: optimizeSpeed;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  -webkit-tap-highlight-color: transparent;
+  color: var(--black-text);
+}
+
+body {
+  font-family: var(--poppins), var(--roboto), sans-serif;
+  font-size: var(--fz-17);
+  font-weight: var(--fw-400);
+  line-height: var(--lh-17);
+
+  min-height: 100vh;
+
+  color: inherit;
+  background-color: var(--white-bg);
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "bag-man-1",
+    "price": 10.99,
+    "imgURL": "graphics/img/bag-man-1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "bag-man-2",
+    "price": 12.5,
+    "imgURL": "graphics/img/bag-man-2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "bag-woman-1",
+    "price": 8.42,
+    "imgURL": "graphics/img/bag-woman-1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "cup-1",
+    "price": 5.12,
+    "imgURL": "graphics/img/cup-1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "pants-1",
+    "price": 8.55,
+    "imgURL": "graphics/img/pants-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "shoes-1",
+    "price": 15.2,
+    "imgURL": "graphics/img/shoes-1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "t-shirt-1",
+    "price": 13.7,
+    "imgURL": "graphics/img/t-shirt-1.jpg"
+  },
+  {
+    "id": 8,
+    "name": "book-1",
+    "price": 13.7,
+    "imgURL": "graphics/img/book-1.jpg"
+  }
+]

@@ -1,16 +1,19 @@
 .nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  border: 1px solid var(--black-border);
+  flex: 3;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
+
+  height: 100%;
 }
 
 .nav-item {
+  color: var(--orange-text);
 }
 
 .nav-link {

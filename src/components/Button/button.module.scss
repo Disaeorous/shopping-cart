@@ -1,0 +1,48 @@
+.btn-primary {
+  width: 100%;
+  max-width: 4.2rem;
+  max-height: 4.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  border: 1px solid var(--blue-border);
+  border-radius: 50%;
+
+  padding: 1em 0;
+  position: relative;
+}
+
+.btn-icon {
+  vertical-align: middle;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.btn-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  font-size: var(--fz-14);
+  line-height: var(--lh-14);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--black-border);
+  border-radius: 50%;
+
+  padding: 0.4em;
+  width: 100%;
+  max-width: 2.6rem;
+  max-height: 2.6rem;
+
+  color: var(--white-text);
+  background: var(--red-base);
+
+  transform: translate(53%, 25%);
+}

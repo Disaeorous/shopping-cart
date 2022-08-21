@@ -1,30 +1,15 @@
 import goodsItems from '../data/items.json';
+import styles from '../styles/pages/shop.module.scss';
+
 import { ProductItem, ProductList } from '../components/Product';
 
 export const Shop = () => {
+  const { shop, shopTitle } = styles;
   return (
-    <div>
-      <h1 style={{ border: '1px solid var(--gray-border)', marginTop: '6.1rem' }}>
-        Products
-      </h1>
-      {/* <ProductList /> */}
+    <section className={shop}>
+      <h1 className={shopTitle}>Products</h1>
 
-      <div>
-        {goodsItems.map((product): any => {
-          return (
-            <div key={product.id} style={{ display: 'flex', gap: '2rem' }}>
-              <p>{product.id}</p>
-              <p>{product.name}</p>
-              <p>{product.price}</p>
-              <img
-                style={{ width: '7.5rem', height: '7.5rem' }}
-                src={product.imgURL}
-                alt={product.name}
-              />
-            </div>
-          );
-        })}
-      </div>
-    </div>
+      <ProductList data={goodsItems} />
+    </section>
   );
 };

@@ -1,19 +1,21 @@
-import goodsItems from '../../../data/items.json';
+import React from 'react';
+import { ProductItemProps, ProductListProps } from '../../../common/types';
+
 import { ProductItem } from '../Item';
 
-export const ProductList = () => {
+export const ProductList: React.FC<ProductListProps> = ({ data }) => {
+  const productData = data as [];
+
+  console.log(productData);
+
   return (
     <>
-      {goodsItems.map(({ product }: any) => {
-        <div key={product.id}>
-          <ProductItem
-            id={product.id}
-            name={product.name}
-            price={product.price}
-            imgURL={product.imgURL}
-          />
-          ;
-        </div>;
+      {productData.map((product: ProductItemProps) => {
+        return (
+          <React.Fragment key={product.id}>
+            <ProductItem {...product} />
+          </React.Fragment>
+        );
       })}
     </>
   );

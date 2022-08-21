@@ -1,4 +1,4 @@
-import { ProductItemProps } from '../../../common/types';
+import { ProductItemProps } from '../../../common/interfaces';
 
 export const ProductItem: React.FC<ProductItemProps> = (item) => {
   const { id, name, price, imgURL } = item;

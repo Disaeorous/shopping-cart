@@ -1,4 +1,4 @@
-import goodsItems from '../data/items.json';
+import goodsItems from '../data/products.json';
 import styles from '../styles/pages/shop.module.scss';
 
 import { ProductItem, ProductList } from '../components/Product';

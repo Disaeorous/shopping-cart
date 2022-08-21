@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProductItemProps, ProductListProps } from '../../../common/types';
+import { ProductItemProps, ProductListProps } from '../../../common/interfaces';
 
 import { ProductItem } from '../Item';
 

@@ -1,37 +1,34 @@
-import { NavLink } from 'react-router-dom';
+import navRoutes from '../../data/navRoutes.json';
+import { NavigationProps, ActiveLinkProps2 } from '../../common/interfaces';
 
 import styles from './navigation.module.scss';
 
-export const Navigation = () => {
-  const { nav, navList } = styles;
+import { NavItem } from './Item';
+import { NavList } from './List';
+import { NavigationLink, activeLink } from './Link';
+
+export const NavItems = () => {
   return (
-    <nav className={nav}>
-      <ul className={navList}>
-        <li>
-          <NavLink
-            style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'orange' })}
-            to='/'
-          >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'orange' })}
-            to='/about'
-          >
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'orange' })}
-            to='/shop'
-          >
-            Shop
-          </NavLink>
-        </li>
-      </ul>
+    <>
+      {navRoutes.map((active: ActiveLinkProps2) => {
+        return (
+          <NavItem key={active.id}>
+            <NavigationLink {...active} cb={activeLink} />
+          </NavItem>
+        );
+      })}
+    </>
+  );
+};
+
+export const Navigation: React.FC<NavigationProps> = (props) => {
+  const { className, style } = props;
+
+  return (
+    <nav style={style} className={`${className ? className : styles.nav} `}>
+      <NavList>
+        <NavItems />
+      </NavList>
     </nav>
   );
 };

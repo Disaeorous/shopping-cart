@@ -9,16 +9,19 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Shop } from './pages/Shop';
 import { Header } from './components/Header';
+import { ShoppingCartProvider } from './context/ShoppingCartContext';
 
 function App() {
   return (
     <div className={styles.container}>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/shop' element={<Shop />} />
-      </Routes>
+      <ShoppingCartProvider>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/shop' element={<Shop />} />
+        </Routes>
+      </ShoppingCartProvider>
     </div>
   );
 }
